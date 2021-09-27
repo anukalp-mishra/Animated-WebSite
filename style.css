@@ -9,8 +9,8 @@
   --black: #333;
   --white: #fff;
 }
-.dark{
-  --black:#fff; 
+.dark {
+  --black: #fff;
   --white: #333;
 }
 header {
@@ -87,7 +87,7 @@ header .logo {
   user-select: none;
   mix-blend-mode: screen;
 }
-.dark .mask{
+.dark .mask {
   filter: invert(1);
   mix-blend-mode: multiply;
 }
@@ -95,7 +95,7 @@ header .logo {
   position: relative;
   z-index: 3;
   font-size: 16vw;
-  color: var(--white);
+  color: #fff;
   text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 .navigation {
@@ -132,7 +132,7 @@ header .logo {
   background: var(--black);
   color: var(--white);
 }
-.crt{
+.crt {
   position: absolute;
   left: 100px;
   bottom: 40px;
@@ -141,19 +141,32 @@ header .logo {
   font-size: 1.2em;
   color: var(--black);
 }
-.sci{
+.sci {
   position: absolute;
-  left: 100px;
+  right: 100px;
   bottom: 40px;
   z-index: 4;
   display: flex;
   flex-direction: column;
 }
-.sci li{
+.sci li {
   list-style: none;
 }
-.sci li a{
+.sci li a {
   text-decoration: none;
-  color: var(--black);
+  color: #3b5998;
   font-size: 1.75em;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  .crt {
+    left: 20px;
+    bottom: 30px;
+  }
+  .sci {
+    right: 20px;
+    bottom: 20px;
+  }
 }
